@@ -3,11 +3,14 @@ import Logo from "../app/assets/logosaas.png";
 import Image from "next/image";
 import MenuIcon from "../app/assets/menu.svg";
 
+
 function Header() {
   return (
-    <header className="sticky top-0 backdrop-blur-sm">
+    <header className="sticky top-0 backdrop-blur-sm z-20">
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
-        <p className="text-white/60 hidden md:block">Streamline your workflow and boost your productivity</p>
+        <p className="text-white/60 hidden md:block">
+          Streamline your workflow and boost your productivity
+        </p>
         <div className="inline-flex gap-1 items-center">
           <p>Get started for free</p>
           <ArrowRight className="h-4 w-4 inline-flex justify-center items-center" />
