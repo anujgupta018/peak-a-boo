@@ -11,10 +11,8 @@ function Hero() {
     >
       <div className="container">
         <div className="md:flex items-center">
-          <div className="md:w-[478px]">
-            <div className="text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight">
-              Version 2.0 is here
-            </div>
+          <div className="md:w-[478px] lg:ml-12">
+            <div className="tag">Version 2.0 is here</div>
             <h1
               className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] 
           text-transparent bg-clip-text mt-6"
@@ -33,7 +31,7 @@ function Hero() {
               </button>
             </div>
           </div>
-          <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">
+          <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative lg:ml-36">
             <Image
               src={cogImage}
               alt="Hehe"
