@@ -14,7 +14,7 @@ function ProductShowcase() {
           Effortlessly turn your ideas into a fully functional,responsive, SaaS
           website in just minutes with this template.
         </p>
-        <Image src={ProductImage} alt="Product" className="mt-10"/>
+        <Image src={ProductImage} alt="Product" className="mt-10" />
       </div>
     </section>
   );
