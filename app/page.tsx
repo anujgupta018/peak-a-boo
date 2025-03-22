@@ -3,6 +3,7 @@ import Header from "../Sections/Header";
 import Hero from "../Sections/Hero";
 import ProductShowcase from "@/Sections/ProductShowcase";
 import { Pricing } from "@/Sections/Pricing";
+import { Testimonials } from "@/Sections/Testimonials";
 export default function Home() {
   return (
     <>
@@ -11,6 +12,7 @@ export default function Home() {
       <LogoTicker />
       <ProductShowcase />
       <Pricing/>
+      <Testimonials/>
     </>
   );
 }
