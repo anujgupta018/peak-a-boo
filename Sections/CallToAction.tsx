@@ -44,7 +44,7 @@ function CallToAction() {
           <button className="btn btn-primary">Get for free</button>
           <button className="btn btn-text gap-1">
             <span>Learn more</span>
-            <ArrowRight className="h-5 w-5" />
+            <ArrowRight className="h-5 w-5"/>
           </button>
         </div>
       </div>
