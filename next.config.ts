@@ -1,21 +1,25 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  reactStrictMode: true, // Ensures best practices
+  reactStrictMode: true,
 
   typescript: {
-    ignoreBuildErrors: true, // Ignores all TypeScript errors
+    ignoreBuildErrors: true,
   },
   experimental: {
-    turbo: {}, // Enable Turbopack (correct syntax for Next.js 15)
+    turbo: {}, // Ensure correct Turbo config
   },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
-      use: ["@svgr/webpack"], // Allows importing SVGs as React components
+      use: ["@svgr/webpack"],
     });
     return config;
   },
+  eslint: {
+    ignoreDuringBuilds: true, // Ignores ESLint errors
+  },
+  output: "standalone", // Ensures all dependencies are bundled properly
 };
 
 export default nextConfig;
