@@ -4,6 +4,8 @@ import Hero from "../Sections/Hero";
 import ProductShowcase from "@/Sections/ProductShowcase";
 import { Pricing } from "@/Sections/Pricing";
 import { Testimonials } from "@/Sections/Testimonials";
+import CallToAction from "@/Sections/CallToAction";
+import Footer from "@/Sections/Footer";
 export default function Home() {
   return (
     <>
@@ -13,6 +15,8 @@ export default function Home() {
       <ProductShowcase />
       <Pricing/>
       <Testimonials/>
+      <CallToAction/>
+      <Footer/>
     </>
   );
 }
