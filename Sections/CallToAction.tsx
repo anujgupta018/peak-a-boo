@@ -1,7 +1,7 @@
 "use client";
-import ArrowRight from "../app/assets/arrow-right.svg";
-import StarImage from "../app/assets/star.png";
-import SpringImage from "../app/assets/spring.png";
+import ArrowRight from "../public/arrow-right.svg";
+import StarImage from "../public/star.png";
+import SpringImage from "../public/spring.png";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
@@ -44,7 +44,10 @@ function CallToAction() {
           <button className="btn btn-primary">Get for free</button>
           <button className="btn btn-text gap-1">
             <span>Learn more</span>
-            <ArrowRight className="h-5 w-5"/>
+            <Image
+              src={ArrowRight}
+              alt="ArrowRight"
+            />
           </button>
         </div>
       </div>

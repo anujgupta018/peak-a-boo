@@ -1,10 +1,10 @@
 "use client";
-import AcmeLogo from "../app/assets/logo-acme.png";
-import EchoLogo from "../app/assets/logo-echo.png";
-import QuantumLogo from "../app/assets/logo-quantum.png";
-import ApexLogo from "../app/assets/logo-apex.png";
-import CelestialLogo from "../app/assets/logo-celestial.png";
-import PulseLogo from "../app/assets/logo-pulse.png";
+import AcmeLogo from "../public/logo-acme.png";
+import EchoLogo from "../public/logo-echo.png";
+import QuantumLogo from "../public/logo-quantum.png";
+import ApexLogo from "../public/logo-apex.png";
+import CelestialLogo from "../public/logo-celestial.png";
+import PulseLogo from "../public/logo-pulse.png";
 import { motion } from "framer-motion";
 import Image from "next/image";
 function LogoTicker() {

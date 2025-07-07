@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import PyramidImage from "../app/assets/pyramid.png";
-import ProductImage from "../app/assets/product-image.png";
-import tubeImage from "../app/assets/tube.png";
+import PyramidImage from "../public/pyramid.png";
+import ProductImage from "../public/product-image.png";
+import tubeImage from "../public/tube.png";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 function ProductShowcase() {

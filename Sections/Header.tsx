@@ -1,8 +1,7 @@
-import ArrowRight from "../app/assets/arrow-right.svg";
-import Logo from "../app/assets/logosaas.png";
+import ArrowRight from "../public/arrow-right.svg";
+import Logo from "../public/logosaas.png";
 import Image from "next/image";
-import MenuIcon from "../app/assets/menu.svg";
-
+import MenuIcon from "../public/menu.svg";
 
 function Header() {
   return (
@@ -13,14 +12,20 @@ function Header() {
         </p>
         <div className="inline-flex gap-1 items-center">
           <p>Get started for free</p>
-          <ArrowRight className="h-4 w-4 inline-flex justify-center items-center" />
+          <Image src={ArrowRight} alt="Arrow" width={16} height={16} />
         </div>
       </div>
       <div className="py-5">
         <div className="container">
           <div className="flex items-center justify-between">
             <Image src={Logo} alt="Logo" height={40} width={40} />
-            <MenuIcon className="h-5 w-5 md:hidden" />
+            <Image
+              src={MenuIcon}
+              alt="Menu Icon"
+              width={20}
+              height={20}
+              className="md:hidden"
+            />
             <nav className="hidden md:flex gap-6 text-black/60 items-center">
               <a href="">About</a>
               <a href="">Features</a>

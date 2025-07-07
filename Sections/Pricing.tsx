@@ -1,7 +1,8 @@
 "use client";
-import CheckIcon from "../app/assets/check.svg";
+import CheckIcon from "../public/check.svg";
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const pricingTiers = [
   {
@@ -133,8 +134,11 @@ export const Pricing = () => {
                 </button>
                 <ul className="flex flex-col gap-5 mt-8">
                   {features.map((feature) => (
-                    <li className="text-sm flex items-center gap-4">
-                      <CheckIcon className="h-6 w-6" />
+                    <li
+                      key={feature}
+                      className="text-sm flex items-center gap-4"
+                    >
+                      <Image src={CheckIcon} alt="check" />
                       <span>{feature}</span>
                     </li>
                   ))}

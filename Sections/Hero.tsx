@@ -1,9 +1,9 @@
 "use client";
-import ArrowIcon from "../app/assets/arrow-right.svg";
-import cogImage from "../app/assets/cog.png";
+import ArrowIcon from "../public/arrow-right.svg";
+import cogImage from "../public/cog.png";
 import Image from "next/image";
-import CylinderImage from "../app/assets/cylinder.png";
-import NoodleImage from "../app/assets/noodle.png";
+import CylinderImage from "../public/cylinder.png";
+import NoodleImage from "../public/noodle.png";
 import {
   motion,
   useScroll,
@@ -45,7 +45,13 @@ function Hero() {
               <button className="btn btn-primary">Get for free</button>
               <button className="btn btn-text gap-1">
                 <span>Learn more</span>
-                <ArrowIcon className="h-5 w-5" />
+                <Image
+                  src={ArrowIcon}
+                  alt="Arrow icon"
+                  width={20}
+                  height={20}
+                  className="h-5 w-5"
+                />
               </button>
             </div>
           </div>
@@ -80,7 +86,7 @@ function Hero() {
               width={220}
               className="hidden lg:block absolute top-[524px] left-[448px] rotate(30deg)"
               style={{
-                rotate:30,
+                rotate: 30,
                 translateY: translateY,
               }}
             />

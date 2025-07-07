@@ -1,14 +1,14 @@
 "use client";
 import Image from "next/image";
-import avatar1 from "../app/assets/avatar-1.png";
-import avatar2 from "../app/assets/avatar-2.png";
-import avatar3 from "../app/assets/avatar-3.png";
-import avatar4 from "../app/assets/avatar-4.png";
-import avatar5 from "../app/assets/avatar-5.png";
-import avatar6 from "../app/assets/avatar-6.png";
-import avatar7 from "../app/assets/avatar-7.png";
-import avatar8 from "../app/assets/avatar-8.png";
-import avatar9 from "../app/assets/avatar-9.png";
+import avatar1 from "../public/avatar-1.png";
+import avatar2 from "../public/avatar-2.png";
+import avatar3 from "../public/avatar-3.png";
+import avatar4 from "../public/avatar-4.png";
+import avatar5 from "../public/avatar-5.png";
+import avatar6 from "../public/avatar-6.png";
+import avatar7 from "../public/avatar-7.png";
+import avatar8 from "../public/avatar-8.png";
+import avatar9 from "../public/avatar-9.png";
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
 import React from "react";
@@ -139,7 +139,6 @@ export const Testimonials = () => {
           <TestimonialsColumn
             testimonials={secondColumn}
             className="hidden md:block"
-            duration={19}
           />
           <TestimonialsColumn
             testimonials={thirdColumn}

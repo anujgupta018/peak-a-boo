@@ -25,10 +25,10 @@
   .section-description {
     @apply text-center text-[22px] leading-[30px] tracking-tight text-[#010D3E];
   }
-  .section-heading{
+  .section-heading {
     @apply max-w-[540px] mx-auto;
   }
-  .card{
+  .card {
     @apply p-10 rounded-3xl border border-[#222222]/10 shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full;
   }
 }
